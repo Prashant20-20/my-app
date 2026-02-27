@@ -2,11 +2,13 @@ const Product = (props)=>{
     console.log(props.productData)
     return(
         <>
+        <div className="main-page">
             <h1>{props.title}</h1>
             <p>Price :- {props.price}</p>
             <p>Brand := {props.Brand}</p>
             {props.children}    
             <ProfileBox/>
+            </div>
         </>
     );
 }

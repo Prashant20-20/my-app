@@ -38,6 +38,7 @@ const StudentList = () =>{
 
     return (
         <>
+        <div className="main-page"> 
         <h1>Student List</h1>
          <table>
             <tr>
@@ -46,7 +47,8 @@ const StudentList = () =>{
                 <td><strong>Email</strong></td>
             </tr>
             {Students.map((data)=> <Student key={data.id} detail={data}/>)}
-        </table>    
+        </table>   
+        </div> 
         </>
     );
 } 

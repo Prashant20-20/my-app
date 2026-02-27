@@ -1,0 +1,71 @@
+.nav-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+  position: relative;
+}
+
+.logo img {
+  width: 120px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+}
+
+.desktop-login {
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+/* Hamburger hidden on desktop */
+.menu-icon {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #fff;
+    flex-direction: column;
+    width: 200px;
+    padding: 20px;
+    display: none;
+    z-index: 9;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  }
+
+  .nav-box{
+    padding: 10px 15px;
+  }
+  .nav-links.active {
+    display: flex;
+    width: 100%;
+  }
+ 
+
+  .menu-icon {
+    display: block;
+  }
+
+  .desktop-login {
+    display: none;
+  }
+
+  .mobile-login {
+    margin-top: 10px;
+    padding: 8px;
+  }
+}
