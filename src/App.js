@@ -1,7 +1,6 @@
  import Nav from "./component/Nav"; 
 import StudentList from "./component/StudentList";
-import Home from "./component/Home";
-import Addstudent from "./component/Addstudent";
+import Home from "./component/Home"; 
 import Error from "./component/Error";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
