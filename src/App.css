@@ -1,0 +1,221 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.nav-box{
+  display: flex;
+  gap: 10px; 
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
+  border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.nav-box ul{
+  display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    padding: 0;
+    gap: 15px;
+}
+.nav-box a{ 
+  color: #000;
+  font-size: 17px;
+  text-decoration: none;
+  padding: 5px 15px;
+  font-weight: 400;
+}
+.nav-box button{
+  background-color: #000;
+  color: #fff;
+  border: 0;
+  padding: 5px 15px;
+  height: 50px;
+}
+.main-banner {
+  position: relative;
+}
+.offer-box {
+  background-color: #850759;
+  color: #fff;
+  width: 400px;
+  padding: 40px 30px;
+  text-align: center;
+  border: 8px solid #eee;
+  font-family: 'Georgia', serif;
+  position: absolute;
+  right: 100px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.offer-box h1 {
+  font-size: 80px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.offer-box h1 span {
+  font-size: 40px;
+}
+
+.offer-box h3 {
+  background: #fff;
+  color: #a0005a;
+  display: inline-block;
+  padding: 8px 15px;
+  margin: 20px 0 0 0;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.offer-box .tagline {
+  margin: 10px 0;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.offer-box .desc {
+  font-size: 12px;
+  margin: 15px 0;
+}
+
+.offer-box .btn {
+  display: inline-block;
+  background: #fff;
+  color: #a0005a;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 15px;
+}
+.offer-box .btn:hover{
+ background-color: #ddd;
+ color: #000;
+}
+.main-container{
+  max-width:   1280px;
+  margin: 45px auto;
+}
+.single-banner {
+	position: relative;
+	z-index: 1;
+  overflow: hidden;
+}
+.single-banner:hover::before {
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+}
+
+.single-banner::before {
+	position: absolute;
+	left: 35px;
+	top: 30px;
+	border: 13px solid #ffffff;
+	content: "";
+	opacity: 0.3;
+	width: calc(100% - 70px);
+	height: calc(100% - 60px);
+	-webkit-transform: scale(0);
+	-ms-transform: scale(0);
+	transform: scale(0);
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.single-banner img {
+	min-width: 100%;
+}
+
+.single-banner .inner-text {
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	width: 100%;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	height: 100%;
+}
+
+.single-banner .inner-text h4 {
+	color: #252525;
+	font-weight: 700;
+	padding: 11px 28px;
+	background: #ffffff;
+	border-radius: 2px;
+}
+
+table, td{
+  border:1px solid #000 !important;
+  padding: 10px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.three-box-sec{
+  text-align: center;
+}
+.three-box-sec h1{
+  font-size: 45px;
+  font-weight: 400;
+  color: #000;
+}
+.grid-box{
+  display: flex;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.footer{ 
+  text-align: center;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  font-size: 17px;
+}
+.footer p{
+  padding: 10px  0;
+  margin: 0;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
