@@ -237,6 +237,9 @@ table, td{
     display: flex;
     gap: 20px;
   }
+	.title-box{
+  flex: 1;
+}
 }
   .product-page{
     margin-top: 25px;
