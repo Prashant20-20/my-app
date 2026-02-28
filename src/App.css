@@ -232,6 +232,22 @@ table, td{
   }
 }
 
+@media (min-width: 768px) {
+.flex-box{
+    display: flex;
+    gap: 20px;
+  }
+}
+  .product-page{
+    margin-top: 25px;
+  }
+  .product-page img{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .abt-img img{
+    width: 100%;
+  }
 
 /* Mobile Styles */
 @media (max-width: 768px) {
@@ -245,6 +261,10 @@ table, td{
   .main-banner img{
     display: none;
   }
+.main-page{
+  margin: 15px;
+}
+  
   
 
 }

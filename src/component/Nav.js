@@ -24,7 +24,7 @@ const Nav = () => {
       <ul className={menuOpen ? "nav-links active" : "nav-links"}>
         <li><Link to="/home">Home</Link></li>
         <li><Link to="/about">About</Link></li>
-        <li><Link to="/student-list">Student List</Link></li>
+        <li><Link to="/client-list">Client List</Link></li>
         <li><Link to="/product">Product</Link></li>
         <li><Link to="/contactus">Contact Us</Link></li>
       </ul>

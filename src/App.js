@@ -1,5 +1,5 @@
- import Nav from "./component/Nav"; 
-import StudentList from "./component/StudentList";
+ import Nav from "./component/Nav";  
+import ClientList from "./component/Clientlist";
 import Home from "./component/Home"; 
 import Error from "./component/Error";
 import "./App.css";
@@ -21,7 +21,7 @@ function App()
         <Route path="/" element={<Home/>}></Route>
         <Route path="/home" element={<Home/>}></Route>
         <Route path="/about" element={<About/>}></Route>
-        <Route path="/student-list" element={<StudentList/>}></Route>
+        <Route path="/client-list" element={<ClientList/>}></Route>
         <Route path="/product" element={<Product/>}></Route>
         <Route path="/contactus" element={<Contactus/>}></Route>
         <Route path="*" element={<Error/>}></Route>

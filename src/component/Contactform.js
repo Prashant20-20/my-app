@@ -8,7 +8,7 @@ const Contactform = () => {
 
     const onSubmit = (event) => {
         event.preventDefault();
-
+         alert(`Name: ${name}\nEmail: ${email}\nMessage: ${text}`);
         setName(event.target[0].value);
         setEmail(event.target[1].value);
         setText(event.target[2].value);
@@ -21,19 +21,19 @@ const Contactform = () => {
         <form onSubmit={onSubmit}>
             <div className="form-control">
                 <label htmlFor="name">Name</label>
-                <input type="text" name="name" />
+                <input type="text" name="name"  onChange={(e) => setName(e.target.value)}  />
             </div>
              <div className="form-control">
                 <label htmlFor="email">Email</label>
-                <input type="email" name="name" />
+                <input type="email" name="name" onChange={(e) => setEmail(e.target.value)}  />
             </div>
              <div className="form-control">
-                <label htmlFor="name">Message</label>
+                <label htmlFor="name" onChange={(e) => setText(e.target.value)} >Message</label>
                 <textarea type="text" />
             </div>
 
            <div className="form-control"><button text="Submit">Submit</button></div> 
-            <div>{name + " " + email + " " + text}</div>
+            
            <div>
             
            </div>

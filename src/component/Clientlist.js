@@ -1,4 +1,4 @@
-const Student = (props) =>{
+const Client = (props) =>{
     return (
         <tr>
             <td>{props.detail.id}</td>
@@ -9,8 +9,8 @@ const Student = (props) =>{
     );
 }
 
-const StudentList = () =>{
-    let Students = [
+const ClientList = () =>{
+    let Clients = [
         {
             id:"1",
             name:"Raj1",
@@ -44,7 +44,7 @@ const StudentList = () =>{
     return (
         <>
         <div className="main-page"> 
-        <h1>Student List</h1>
+        <h1>Client List</h1>
          <table>
             <tr>
                 <td><strong>ID</strong></td>
@@ -52,11 +52,11 @@ const StudentList = () =>{
                 <td><strong>Address</strong></td>
                 <td><strong>Email</strong></td>
             </tr>
-            {Students.map((data)=> <Student key={data.id} detail={data}/>)}
+            {Clients.map((data)=> <Client key={data.id} detail={data}/>)}
         </table>   
         </div> 
         </>
     );
 } 
 
-export default StudentList;
+export default ClientList;

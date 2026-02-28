@@ -1,34 +1,38 @@
-const Product = (props)=>{
-    console.log(props.productData)
+import React from "react";
+
+const Products = [
+    { image:"../images/about-img.jpg", name: "Product1", price:"1000", brand:"Top Brand"},
+    { image:"../images/about-img.jpg", name: "Product2", price:"3000", brand:"Top Brand"},
+    { image:"../images/about-img.jpg",name: "Product3", price:"2000", brand:"Top Brand"}
+]
+
+function Product({image, name, price, brand}){
+
+    return (
+       
+        <div className="product-page">
+            <div><img src={image} alt={name}/></div>
+            <h2>{name}</h2>
+            <p>{brand}</p>
+            <p>₹{price}</p>
+        </div>
+         
+    );
+} 
+
+function ProductPage() {
     return(
         <>
         <div className="main-page">
-            <h1>{props.title}</h1>
-            <p>Price :- {props.price}</p>
-            <p>Brand := {props.Brand}</p>
-            {props.children}    
-            <ProfileBox/>
-            </div>
+        <h1>Product List</h1>
+         <div className="flex-box">
+        {Products.map((item) => (
+            <Product image={item.image} name={item.name} price={item.price} brand={item.brand}/> 
+        ))}
+         </div>
+        </div>
         </>
     );
 }
 
-const ProfileBox = ()=>{
-    const demo = ()=>{
-        console.log("Popup Box Open");
-    }
-    const demo1 = ()=>{
-        console.log("dummy contnet popup");
-    }
-
-    return(
-        <>
-            <h1>This is profile box</h1>
-            <p>dumy profile</p>
-            <button onClick={demo}>Popup</button>
-            <button onClick={demo1}>Test content</button>
-        </>
-    )
-}
-
-export default Product;
+export default ProductPage;
